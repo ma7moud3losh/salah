@@ -1,0 +1,52 @@
+/* تنسيق القائمة الأساسية */
+nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    position: relative; /* مهم لتحديد موضع القائمة الفرعية */
+  }
+  
+  li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  li a:hover {
+    background-color: #555;
+  }
+  
+  /* القائمة الفرعية */
+  .dropdown {
+    display: none; /* إخفاء القائمة الفرعية افتراضيًا */
+    position: absolute;
+    top: 100%; /* ظهورها أسفل العنصر الرئيسي */
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown li {
+    width: 100%;
+  }
+  
+  .dropdown li a {
+    padding: 10px;
+  }
+  
+  /* عرض القائمة عند التمرير */
+  li:hover .dropdown {
+    display: block;
+  }
+  

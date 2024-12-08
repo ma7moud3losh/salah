@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* توسيط العنصر أفقياً */
+    align-items: flex-start; /* جعله في الأعلى */
+    height: 100vh; /* جعل الصفحة تأخذ كامل ارتفاع الشاشة */
+    background-color: #f4f4f4; /* لون خلفية اختياري */
+    }
+nav {
+    background-color: #333;
+    padding: 10px;
+    width: 80%;
+
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    position: relative; /* مهم لتحديد موضع القائمة الفرعية */
+  }
+  
+  li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  li a:hover {
+    background-color: #555;
+  }
+  
+  /* القائمة الفرعية */
+.menu{
+    display: none; /* إخفاء القائمة الفرعية افتراضيًا */
+    position: absolute;
+    top: 100%; /* ظهورها أسفل العنصر الرئيسي */
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.menu li {
+    width: 100%;
+  }
+  
+  .menu li a {
+    padding: 10px;
+    color: black;
+  }
+  
+  /* عرض القائمة عند التمرير */
+  li:hover .menu {
+    display: block;
+    font-size: small;
+    background-color: #f4f4f4;
+    
+  }
+  
